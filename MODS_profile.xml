@@ -297,11 +297,12 @@
   </lists>
 
   <elementSets>
-    <!--Basic Elements-->
-    <metadataElement code="titleInfo" datatype="Container">
+    <!--MODS Elements-->
+ <metadataElement code="titleInfo" datatype="Container">
      <labels>
        <label locale="en_US">
          <name>titleInfo</name>
+         <description>authority see: http://www.loc.gov/standards/sourcelist/name-title.html </description>
        </label>
      </labels>
      <documentationUrl>http://www.loc.gov/standards/mods/mods-outline-3-6.html#titleInfo</documentationUrl>
@@ -432,6 +433,7 @@
     <labels>
       <label locale="en_US">
         <name>name</name>
+        <description>	authority see: http://www.loc.gov/standards/sourcelist/name-title.html </description
       </label>
     </labels>
     <documentationUrl>http://www.loc.gov/standards/mods/mods-outline-3-6.html#name</documentationUrl>
@@ -512,6 +514,7 @@
        <labels>
          <label locale="en_US">
            <name>role</name>
+           <description> see:http://www.loc.gov/standards/sourcelist/relator-role.html </description>
          </label>
        </labels>
        <settings>
@@ -578,7 +581,7 @@
       <labels>
         <label locale="en_US">
           <name>Note</name>
-          <description>Note</description>
+          <description>Note types see: http://www.loc.gov/standards/mods/mods-notes.html</description>
         </label>
       </labels>
       <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#note</documentationUrl>
@@ -598,6 +601,235 @@
         </label>
       </labels>
       <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#tableOfContents</documentationUrl>
+      <settings>
+        <setting name="usewysiwygeditor">1</setting>
+        <setting name="fieldWidth">640px</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="typeOfResource" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>typeOfResource</name>
+          <description>Type of Resource list text, cartographic, notated music, sound recording-musical, sound recording-nonmusical, sound recording
+          still image, moving image, three dimensional object, software, multimedia, mixed material</description>
+        </label>
+      </labels>
+      <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#typeOfResource</documentationUrl>
+      <settings>
+        <setting name="usewysiwygeditor">1</setting>
+        <setting name="fieldWidth">640px</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="genre" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>genre</name>
+          <description>genre</description>
+        </label>
+      </labels>
+      <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#genre</documentationUrl>
+      <settings>
+        <setting name="usewysiwygeditor">1</setting>
+        <setting name="fieldWidth">640px</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="language" datatype="Container">
+      <labels>
+        <label locale="en_US">
+          <name>language</name>
+          <description>language comprises language term and script term</description>
+        </label>
+      </labels>
+      <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#language</documentationUrl>
+      <elements>
+        <metadataElement code="languageTerm" datatype="Text">
+          <labels>
+            <label locale="en_US">
+              <name>languageTerm</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">70</setting>
+            <setting name="fieldHeight">6</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="scriptTerm" datatype="Text">
+          <labels>
+            <label locale="en_US">
+              <name>scriptTerm</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">70</setting>
+            <setting name="fieldHeight">6</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+          </settings>
+        </metadataElement>
+      </elements>
+    </metadataElement>
+    <metadataElement code="physicalDescription" datatype="Container">
+      <labels>
+        <label locale="en_US">
+          <name>physicalDescription</name>
+          <description>Physical Description</description>
+        </label>
+      </labels>
+      <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#physicalDescription</documentationUrl>
+      <elements>
+        <metadataElement code="form" datatype="Text">
+          <labels>
+            <label locale="en_US">
+              <name>form</name>
+              <description>Attributes: authority (see: http://www.loc.gov/standards/sourcelist/genre-form.html); authorityURI; valueURI; type
+(Examples: material, technique)</description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">70</setting>
+            <setting name="fieldHeight">6</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="reformattingQuality" datatype="Text">
+          <labels>
+            <label locale="en_US">
+              <name>reformattingQuality</name>
+              <description>access, preservation, replacement</description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">70</setting>
+            <setting name="fieldHeight">6</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="internetMediaType" datatype="Text">
+          <labels>
+            <label locale="en_US">
+              <name>internetMediaType</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">70</setting>
+            <setting name="fieldHeight">6</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="extent" datatype="Text">
+          <labels>
+            <label locale="en_US">
+              <name>extent</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">70</setting>
+            <setting name="fieldHeight">6</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="digitalOrigin" datatype="Text">
+          <labels>
+            <label locale="en_US">
+              <name>digitalOrigin</name>
+              <description>born digital, reformatted digital, digitized microfilm, digitized other analog</description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">70</setting>
+            <setting name="fieldHeight">6</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="note" datatype="Text">
+          <labels>
+            <label locale="en_US">
+              <name>note</name>
+              <description>notes examples found here http://www.loc.gov/standards/mods/mods-notes.html/description</description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">70</setting>
+            <setting name="fieldHeight">6</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+          </settings>
+        </metadataElement>
+      </elements>
+    </metadataElement>
+    <metadataElement code="targetAudience" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>targetAudience</name>
+          <description>Target Audience</description>
+        </label>
+      </labels>
+      <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#targetAudience</documentationUrl>
+      <settings>
+        <setting name="usewysiwygeditor">1</setting>
+        <setting name="fieldWidth">640px</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="classification" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>classification</name>
+          <description>authority http://www.loc.gov/standards/sourcelist/classification.html</description>
+        </label>
+      </labels>
+      <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#classification</documentationUrl>
+      <settings>
+        <setting name="usewysiwygeditor">1</setting>
+        <setting name="fieldWidth">640px</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="relatedItem" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>relatedItem</name>
+        </label>
+      </labels>
+      <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#relatedItem</documentationUrl>
+      <settings>
+        <setting name="usewysiwygeditor">1</setting>
+        <setting name="fieldWidth">640px</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="identifier" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>identifier</name>
+          <description>suggested values: hdl, doi, isbn, isrc, ismn, issn, issue number, istc, lccn, local,
+          matrix number, music publisher, music plate, sici, uri, upc, videorecording identifier,
+          stock number</description>
+        </label>
+      </labels>
+      <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#identifier</documentationUrl>
       <settings>
         <setting name="usewysiwygeditor">1</setting>
         <setting name="fieldWidth">640px</setting>
@@ -771,9 +1003,8 @@
             <setting name="maxChars">65535</setting>
           </settings>
         </metadataElement>
-      </elements>
-    </metadataElement>
-    <!-- Start subject area with subelements -->
+      </elements> <!-- end OriginInfo subelements -->
+    </metadataElement> <!-- end originInfo -->
     <metadataElement code="subject" datatype="Container">
       <labels>
         <label locale="en_US">
@@ -782,7 +1013,7 @@
         </label>
       </labels>
       <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#subject</documentationUrl>
-    <elements>
+    <elements> <!-- subelements of Subject -->
      <metadataElement code="topic" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -982,8 +1213,8 @@
         </restriction>
       </typeRestrictions>
      </metadataElement>
-   </elements> <!-- end subelements of subject titleInfo -->
- </metadataElement> <!-- end container of subject titleInfo -->
+   </elements> <!-- end subelements of subject subelement titleInfo -->
+ </metadataElement> <!-- end container of subject subelement titleInfo -->
  <metadataElement code="name" datatype="Container">
   <labels>
     <label locale="en_US">
@@ -1111,8 +1342,8 @@
        </restriction>
      </typeRestrictions>
     </metadataElement>
-  </elements> <!-- end subelements of subject name -->
-</metadataElement> <!-- end container of subject name -->
+  </elements> <!-- end subelements of subject subelement name -->
+</metadataElement> <!-- end container of subject subelement name -->
 <metadataElement code="geographicCode" datatype="Text">
  <labels>
    <label locale="en_US">
@@ -1167,7 +1398,7 @@
      <name>hierarchicalGeographic</name>
    </label>
  </labels>
- <elements> <!-- subelements of hierarchicalGeographic -->
+ <elements> <!-- subelements of subject subelement hierarchicalGeographic -->
    <metadataElement code="continent" datatype="Text">
     <labels>
       <label locale="en_US">
@@ -1311,8 +1542,8 @@
       <setting name="maxChars">255</setting>
     </settings>
    </metadataElement>
- </elements> <!-- end subelements of hierarchicalGeographic -->
-</metadataElement> <!-- end container of hierarchicalGeographic -->
+ </elements> <!-- end subelements of subject subelement hierarchicalGeographic -->
+</metadataElement> <!-- end container of subject subelement hierarchicalGeographic -->
 <metadataElement code="cartographics" datatype="Text">
  <labels>
    <label locale="en_US">
@@ -1341,6 +1572,298 @@
 </metadataElement>
 </elements> <!-- end subelements of subject -->
 </metadataElement> <!-- end container of subject -->
+<metadataElement code="location" datatype="Container">
+  <labels>
+    <label locale="en_US">
+      <name>location</name>
+      <description>location with subelements</description>
+    </label>
+  </labels>
+  <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#location</documentationUrl>
+  <elements>
+    <metadataElement code="physicalLocation" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>physicalLocation</name>
+          <description>authority see: www.loc.gov/marc/sourcecode/organization/organizationsource.html </description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="shelfLocator" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>shelfLocator</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="url" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>url</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="holdingSimple" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>holdingSimple</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="holdingExternal" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>holdingExternal</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+  </elements> <!-- end subelements of Location -->
+</metadataElement> <!-- end Location element -->
+<metadataElement code="accessCondition" datatype="Text">
+  <labels>
+    <label locale="en_US">
+      <name>accessCondition</name>
+      <description>suggested values: restriction on access; use and reproduction</description>
+    </label>
+  </labels>
+  <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#accessCondition</documentationUrl>
+  <settings>
+    <setting name="fieldWidth">70</setting>
+    <setting name="fieldHeight">6</setting>
+    <setting name="minChars">0</setting>
+    <setting name="maxChars">65535</setting>
+  </settings>
+</metadataElement>
+<metadataElement code="part" datatype="Container">
+  <labels>
+    <label locale="en_US">
+      <name>part</name>
+      <description>suggested values: volume, issue, chapter, section, paragraph, track</description>
+    </label>
+  </labels>
+  <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#part</documentationUrl>
+  <elements>
+    <metadataElement code="detail" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>detail</name>
+          <description>number, caption, title</description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="extent" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>extent</name>
+          <description> unit, start, end, total, list </description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="date" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>date</name>
+          <description> encoding: w3cdtf, iso8601, marc, edtf, temper </description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="text" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>text</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+  </elements> <!-- end subelements of Part -->
+</metadataElement> <!-- end Part element -->
+<metadataElement code="extension" datatype="Text">
+  <labels>
+    <label locale="en_US">
+      <name>extension</name>
+    </label>
+  </labels>
+  <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#extension</documentationUrl>
+  <settings>
+    <setting name="fieldWidth">70</setting>
+    <setting name="fieldHeight">6</setting>
+    <setting name="minChars">0</setting>
+    <setting name="maxChars">65535</setting>
+  </settings>
+</metadataElement>
+
+<metadataElement code="recordInfo" datatype="Container">
+  <labels>
+    <label locale="en_US">
+      <name>recordInfo</name>
+    </label>
+  </labels>
+  <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#recordInfo</documentationUrl>
+  <elements>
+    <metadataElement code="recordContentSource" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>recordContentSource</name>
+          <description>authority see: http://www.loc.gov/standards/sourcelist/organization.html</description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="recordCreationDate" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>recordCreationDate</name>
+          <description>encoding: w3cdtf, iso8601, marc, edtf, temper</description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="recordChangeDate" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>recordChangeDate</name>
+          <description> encoding: w3cdtf, iso8601, marc, edtf, temper </description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="recordIdentifier" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>recordIdentifier</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="recordOrigin" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>recordOrigin</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="recordInfoNote" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>recordInfoNote</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="languageOf Cataloging" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>languageOf Cataloging</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+    <metadataElement code="descriptionStandard" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>descriptionStandard</name>
+          <description>http://www.loc.gov/standards/sourcelist/descriptive-conventions.html</description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">70</setting>
+        <setting name="fieldHeight">6</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
+    </metadataElement>
+  </elements> <!-- end subelements of recordInfo -->
+</metadataElement> <!-- end RecordInfo element -->
+<!-- END ELEMENTS -->
 
     <metadataElement code="reproduction" datatype="List" list="original_reproduction">
       <labels>
