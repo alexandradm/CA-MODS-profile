@@ -338,83 +338,95 @@
         </item>
       </items>
     </list>
-    <list code="occurrence_types" hierarchical="1" system="0" vocabulary="0">
+    <list code="conditions_list" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
-          <name>Occurrence types</name>
+          <name>Access conditions</name>
+          <description>from righstatements.org and creativecommons.org</description>
         </label>
       </labels>
       <items>
-        <item idno="event" enabled="1" default="1">
+        <item idno="incopyright" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>event</name_singular>
-              <name_plural>events</name_plural>
+              <name_singular>In copyright</name_singular>
             </label>
           </labels>
         </item>
-      </items>
-    </list>
-    <list code="storage_location_types" hierarchical="1" system="0" vocabulary="0">
-      <labels>
-        <label locale="en_US">
-          <name>Storage location types</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="campus" enabled="1" default="1">
+        <item idno="incopyright_euorphan" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>campus</name_singular>
-              <name_plural>campuses</name_plural>
+              <name_singular>In copyright - EU orphan work</name_singular>
             </label>
           </labels>
         </item>
-        <item idno="building" enabled="1" default="0">
+        <item idno="incopyright_edu" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>building</name_singular>
-              <name_plural>buildings</name_plural>
+              <name_singular>In copyright - educational use permitted</name_singular>
             </label>
           </labels>
         </item>
-        <item idno="floor" enabled="1" default="0">
+        <item idno="incopyright_noncomm" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>floor</name_singular>
-              <name_plural>floors</name_plural>
+              <name_singular>In copyright - non-commercial use permitted</name_singular>
             </label>
           </labels>
         </item>
-        <item idno="room" enabled="1" default="0">
+        <item idno="incopyright_holders" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>room</name_singular>
-              <name_plural>rooms</name_plural>
+              <name_singular>In copyright - rights-holder(s) unlocatable or unidentifiable</name_singular>
             </label>
           </labels>
         </item>
-        <item idno="cabinet" enabled="1" default="0">
+        <item idno="nocopyright_contractrestrict" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>cabinet</name_singular>
-              <name_plural>cabinets</name_plural>
+              <name_singular>No copyright - contractual restrictions</name_singular>
             </label>
           </labels>
         </item>
-        <item idno="drawer" enabled="1" default="0">
+        <item idno="nocopyright_noncomm" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>drawer</name_singular>
-              <name_plural>drawers</name_plural>
+              <name_singular>No copyright - non-commercial use only</name_singular>
             </label>
           </labels>
         </item>
-        <item idno="shelf" enabled="1" default="0">
+        <item idno="nocopyright_other" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>shelf</name_singular>
-              <name_plural>shelves</name_plural>
+              <name_singular>No copyright - other known legal restrictions</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="nocopyright_us" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>No copyright - United States</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="copyright_noteval" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Copyright not evaluated</name_singular>
+            </label>
+          </labels>
+        </item
+        <item idno="copyright_undetermined" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Copyright undetermined</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="noknowncopyright" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>No known copyright</name_singular>
             </label>
           </labels>
         </item>
