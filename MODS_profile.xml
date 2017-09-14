@@ -6,174 +6,333 @@
     <locale lang="en" country="US">English</locale>
   </locales>
   <lists>
-    <list code="object_sources" hierarchical="1" system="0" vocabulary="0">
+    <list code="frequency_list" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
-          <name>Object Source</name>
+          <name>Frequency</name>
         </label>
       </labels>
       <items>
-        <item idno="internal" enabled="1" default="1">
+        <item idno="continuous" enabled="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Our collection</name_singular>
-              <name_plural>Our collections</name_plural>
+              <name_singular>Continuously updated</name_singular>
             </label>
           </labels>
         </item>
-        <item idno="external" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>External collection</name_singular>
-              <name_plural>External collections</name_plural>
-            </label>
-          </labels>
-        </item>
+          <item idno="daily" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Daily</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="semiweekly" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Semiweekly</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="threeweek" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Three times a week</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="weekly" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Weekly</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="biweekly" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Biweekly</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="threemonth" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Three times a month</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="semimonthly" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Semimonthly</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="monthly" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Monthly</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="bimonthly" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Bimonthly</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="quarterly" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Quarterly</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="threeyear" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Three times a year</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="semiannual" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Semiannual</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="annual" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Annual</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="biennial" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Biennial</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="triennial" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Triennial</name_singular>
+              </label>
+            </labels>
+          </item>
+          <item idno="irregular" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Completely irregular</name_singular>
+              </label>
+            </labels>
+          </item>
       </items>
     </list>
-    <list code="object_types" hierarchical="1" system="0" vocabulary="1">
+    <list code="resourcetype_list" hierarchical="1" system="0" vocabulary="1">
       <labels>
         <label locale="en_US">
-          <name>Object Types</name>
+          <name>Type of Resource</name>
         </label>
       </labels>
       <items>
-        <item idno="dataset" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Dataset</name_singular>
-              <name_plural>Datasets</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="image" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Image</name_singular>
-              <name_plural>Images</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="interactive_resource" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Interactive Resource</name_singular>
-              <name_plural>Interactive Resources</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="moving_image" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Moving Image</name_singular>
-              <name_plural>Moving Images</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="physical_object" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Physical Object</name_singular>
-              <name_plural>Physical Objects</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="service" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Service</name_singular>
-              <name_plural>Services</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="software" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Software</name_singular>
-              <name_plural>Software</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="sound" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Sound</name_singular>
-              <name_plural>Sounds</name_plural>
-            </label>
-          </labels>
-        </item>
         <item idno="text" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Text</name_singular>
-              <name_plural>Texts</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="cartographic" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Cartographic</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="notatedmusic" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Notated music</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="soundrecording" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Sound recording</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="soundrecordingmusical" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Sound recording-musical</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="soundrecordingnonmusical" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Sound recording-nonmusical</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="still image" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Still image</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="movingimage" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Moving image</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="threedimensional" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Three dimensional object</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="softwaremultimedia" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Software, multimedia</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="mixedmaterial" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Mixed material</name_singular>
             </label>
           </labels>
         </item>
       </items>
     </list>
-    <list code="entity_types" hierarchical="1" system="0" vocabulary="0">
+    <list code="digitalorigin_list" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
-          <name>Entity Types</name>
+          <name>Digital Origin</name>
         </label>
       </labels>
       <items>
-        <item idno="ind" enabled="1" default="1">
+        <item idno="borndigital" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Individual</name_singular>
-              <name_plural>Individuals</name_plural>
+              <name_singular>Born digital</name_singular>
             </label>
           </labels>
         </item>
-        <item idno="org" enabled="1" default="0">
+        <item idno="reformatted" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Organization</name_singular>
-              <name_plural>Organizations</name_plural>
+              <name_singular>Reformatted digital</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="microfilm" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Digitized microfilm</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="other" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Digitized other analog</name_singular>
             </label>
           </labels>
         </item>
       </items>
     </list>
-    <list code="entity_sources" hierarchical="1" system="0" vocabulary="0">
+    <list code="reformatting_list" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
-          <name>Entity sources</name>
+          <name>Reformatting quality</name>
         </label>
       </labels>
       <items>
-        <item idno="dc" enabled="1" default="1">
+        <item idno="access" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>DC entity list</name_singular>
-              <name_plural>DC entity lists</name_plural>
+              <name_singular>Access</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="preservation" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Preservation</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="replacement" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Replacement</name_singular>
             </label>
           </labels>
         </item>
       </items>
     </list>
-    <list code="collection_types" hierarchical="1" system="0" vocabulary="0">
+    <list code="audience_list" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
-          <name>Collection types</name>
+          <name>Target Audience</name>
         </label>
       </labels>
       <items>
-        <item idno="internal" enabled="1" default="1">
+        <item idno="adolescent" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Internal collection</name_singular>
-              <name_plural>Internal collections</name_plural>
+              <name_singular>Adolescent</name_singular>
             </label>
           </labels>
         </item>
-        <item idno="external" enabled="1" default="0">
+        <item idno="adult" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>External collection</name_singular>
-              <name_plural>External collections</name_plural>
+              <name_singular>Adult</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="general" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>General</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="juvenile" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Juvenile</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="preschool" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Preschool</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="specialized" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Specialized</name_singular>
             </label>
           </labels>
         </item>
@@ -609,21 +768,17 @@
         <setting name="maxChars">65535</setting>
       </settings>
     </metadataElement>
-    <metadataElement code="typeOfResource" datatype="Text">
+    <metadataElement code="typeOfResource" datatype="List" list="resourcetype_list">
       <labels>
         <label locale="en_US">
           <name>typeOfResource</name>
-          <description>Type of Resource list text, cartographic, notated music, sound recording-musical, sound recording-nonmusical, sound recording
-          still image, moving image, three dimensional object, software, multimedia, mixed material</description>
+          <description>Type of Resource list</description>
         </label>
       </labels>
       <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#typeOfResource</documentationUrl>
       <settings>
-        <setting name="usewysiwygeditor">1</setting>
-        <setting name="fieldWidth">640px</setting>
-        <setting name="fieldHeight">6</setting>
-        <setting name="minChars">0</setting>
-        <setting name="maxChars">65535</setting>
+        <setting name="render">select</setting>
+        <setting name="maxColumns">1</setting>
       </settings>
     </metadataElement>
     <metadataElement code="genre" datatype="Text">
@@ -703,7 +858,7 @@
             <setting name="maxChars">65535</setting>
           </settings>
         </metadataElement>
-        <metadataElement code="reformattingQuality" datatype="Text">
+        <metadataElement code="reformattingQuality" datatype="List" list="reformatting_list">
           <labels>
             <label locale="en_US">
               <name>reformattingQuality</name>
@@ -711,10 +866,8 @@
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">70</setting>
-            <setting name="fieldHeight">6</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
+            <setting name="render">select</setting>
+            <setting name="maxColumns">1</setting>
           </settings>
         </metadataElement>
         <metadataElement code="internetMediaType" datatype="Text">
@@ -743,7 +896,7 @@
             <setting name="maxChars">65535</setting>
           </settings>
         </metadataElement>
-        <metadataElement code="digitalOrigin" datatype="Text">
+        <metadataElement code="digitalOrigin" datatype="List" list="digitalorigin_list">
           <labels>
             <label locale="en_US">
               <name>digitalOrigin</name>
@@ -751,10 +904,8 @@
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">70</setting>
-            <setting name="fieldHeight">6</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
+            <setting name="render">select</setting>
+            <setting name="maxColumns">1</setting>
           </settings>
         </metadataElement>
         <metadataElement code="note" datatype="Text">
@@ -773,7 +924,7 @@
         </metadataElement>
       </elements>
     </metadataElement>
-    <metadataElement code="targetAudience" datatype="Text">
+    <metadataElement code="targetAudience" datatype="List" list="audience_list">
       <labels>
         <label locale="en_US">
           <name>targetAudience</name>
@@ -782,11 +933,8 @@
       </labels>
       <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#targetAudience</documentationUrl>
       <settings>
-        <setting name="usewysiwygeditor">1</setting>
-        <setting name="fieldWidth">640px</setting>
-        <setting name="fieldHeight">6</setting>
-        <setting name="minChars">0</setting>
-        <setting name="maxChars">65535</setting>
+        <setting name="render">select</setting>
+        <setting name="maxColumns">1</setting>
       </settings>
     </metadataElement>
     <metadataElement code="classification" datatype="Text">
@@ -990,17 +1138,15 @@
             <setting name="maxChars">65535</setting>
           </settings>
         </metadataElement>
-        <metadataElement code="frequency" datatype="Text">
+        <metadataElement code="frequency" datatype="List" list="frequency_list">
           <labels>
             <label locale="en_US">
               <name>frequency</name>
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">40</setting>
-            <setting name="fieldHeight">1</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
+            <setting name="render">select</setting>
+            <setting name="maxColumns">1</setting>
           </settings>
         </metadataElement>
       </elements> <!-- end OriginInfo subelements -->
