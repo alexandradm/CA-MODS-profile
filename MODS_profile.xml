@@ -430,6 +430,20 @@
             </label>
           </labels>
         </item>
+        <item idno="cc_sharealike" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>CC BY-NC-SA 4.0 - Non-commercial share-alike</name_singular>
+            </label>
+          </labels>
+        </item>
+        <item idno="cc_none" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>CC0 No Rights Reserved - Public Domain</name_singular>
+            </label>
+          </labels>
+        </item>
       </items>
     </list>
     <list code="original_reproduction" hierarchical="1" system="0" vocabulary="0">
@@ -633,6 +647,28 @@
          </restriction>
        </typeRestrictions>
       </metadataElement>
+<!-- TESTING INFORMATION SERVICE LINKING BY DUPLICATING NAMEPART -->
+<metadataElement code="namePart" datatype="InformationService">
+ <labels>
+   <label locale="en_US">
+     <name>namePart</name>
+   </label>
+ </labels>
+ <settings>
+   <setting name="service">http://id.loc.gov/authorities/names.json</setting>
+ </settings>
+ <typeRestrictions>
+   <restriction code="r1">
+     <table>ca_objects</table>
+     <settings>
+       <setting name="minAttributesPerRow">0</setting>
+       <setting name="maxAttributesPerRow">255</setting>
+       <setting name="minimumAttributeBundlesToDisplay">1</setting>
+     </settings>
+   </restriction>
+ </typeRestrictions>
+</metadataElement>
+<!-- end test -->
       <metadataElement code="displayForm" datatype="Text">
        <labels>
          <label locale="en_US">
