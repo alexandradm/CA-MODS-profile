@@ -13,122 +13,139 @@
         </label>
       </labels>
       <items>
-        <item idno="continuous" enabled="1">
+        <item idno="continuous" default="0" enabled="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Continuously updated</name_singular>
+              <name_plural>Continuously updated</name_plural>
             </label>
           </labels>
         </item>
-          <item idno="daily" enabled="1">
+          <item idno="daily" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Daily</name_singular>
+                <name_plural>Daily</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="semiweekly" enabled="1">
+          <item idno="semiweekly" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Semiweekly</name_singular>
+                <name_plural>Semiweekly</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="threeweek" enabled="1">
+          <item idno="threeweek" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Three times a week</name_singular>
+                <name_plural>Three times a week</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="weekly" enabled="1">
+          <item idno="weekly" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Weekly</name_singular>
+                <name_plural>Weekly</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="biweekly" enabled="1">
+          <item idno="biweekly" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Biweekly</name_singular>
+                <name_plural>Biweekly</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="threemonth" enabled="1">
+          <item idno="threemonth" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Three times a month</name_singular>
+                <name_plural>Three times a month</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="semimonthly" enabled="1">
+          <item idno="semimonthly" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Semimonthly</name_singular>
+                <name_plural>Semimonthly</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="monthly" enabled="1">
+          <item idno="monthly" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Monthly</name_singular>
+                <name_plural>Monthly</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="bimonthly" enabled="1">
+          <item idno="bimonthly" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Bimonthly</name_singular>
+                <name_plural>Bimonthly</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="quarterly" enabled="1">
+          <item idno="quarterly" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Quarterly</name_singular>
+                <name_plural>Quarterly</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="threeyear" enabled="1">
+          <item idno="threeyear" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Three times a year</name_singular>
+                <name_plural>Three times a year</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="semiannual" enabled="1">
+          <item idno="semiannual" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Semiannual</name_singular>
+                <name_plural>Semiannual</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="annual" enabled="1">
+          <item idno="annual" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Annual</name_singular>
+                <name_plural>Annual</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="biennial" enabled="1">
+          <item idno="biennial" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Biennial</name_singular>
+                <name_plural>Biennial</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="triennial" enabled="1">
+          <item idno="triennial" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Triennial</name_singular>
+                <name_plural>Triennial</name_plural>
               </label>
             </labels>
           </item>
-          <item idno="irregular" enabled="1">
+          <item idno="irregular" default="0" enabled="1">
             <labels>
               <label locale="en_US" preferred="1">
                 <name_singular>Completely irregular</name_singular>
+                <name_plural>Completely irregular</name_plural>
               </label>
             </labels>
           </item>
@@ -145,6 +162,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Text</name_singular>
+              <name_plural>Text</name_plural>
             </label>
           </labels>
         </item>
@@ -152,6 +170,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Cartographic</name_singular>
+              <name_plural>Cartographic</name_plural>
             </label>
           </labels>
         </item>
@@ -159,6 +178,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Notated music</name_singular>
+              <name_plural>Notated music</name_plural>
             </label>
           </labels>
         </item>
@@ -166,6 +186,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Sound recording</name_singular>
+              <name_plural>Sound recording</name_plural>
             </label>
           </labels>
         </item>
@@ -173,6 +194,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Sound recording-musical</name_singular>
+              <name_plural>Sound recording-musical</name_plural>
             </label>
           </labels>
         </item>
@@ -180,13 +202,15 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Sound recording-nonmusical</name_singular>
+              <name_plural>Sound recording-nonmusical</name_plural>
             </label>
           </labels>
         </item>
-        <item idno="still image" enabled="1" default="0">
+        <item idno="still_image" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Still image</name_singular>
+              <name_plural>Still image</name_plural>
             </label>
           </labels>
         </item>
@@ -194,6 +218,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Moving image</name_singular>
+              <name_plural>Moving image</name_plural>
             </label>
           </labels>
         </item>
@@ -201,6 +226,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Three dimensional object</name_singular>
+              <name_plural>Three dimensional object</name_plural>
             </label>
           </labels>
         </item>
@@ -208,6 +234,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Software, multimedia</name_singular>
+              <name_plural>Software, multimedia</name_plural>
             </label>
           </labels>
         </item>
@@ -215,6 +242,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Mixed material</name_singular>
+              <name_plural>Mixed material</name_plural>
             </label>
           </labels>
         </item>
@@ -231,6 +259,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Born digital</name_singular>
+                <name_plural>Born digital</name_plural>
             </label>
           </labels>
         </item>
@@ -238,6 +267,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Reformatted digital</name_singular>
+              <name_plural>Reformatted digital</name_plural>
             </label>
           </labels>
         </item>
@@ -245,6 +275,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Digitized microfilm</name_singular>
+              <name_plural>Digitized microfilm</name_plural>
             </label>
           </labels>
         </item>
@@ -252,6 +283,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Digitized other analog</name_singular>
+              <name_plural>Digitized other analog</name_plural>
             </label>
           </labels>
         </item>
@@ -268,6 +300,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Access</name_singular>
+              <name_plural>Access</name_plural>
             </label>
           </labels>
         </item>
@@ -275,6 +308,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Preservation</name_singular>
+              <name_plural>Preservation</name_plural>
             </label>
           </labels>
         </item>
@@ -282,6 +316,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Replacement</name_singular>
+              <name_plural>Replacement</name_plural>
             </label>
           </labels>
         </item>
@@ -298,6 +333,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Adolescent</name_singular>
+              <name_plural>Adolescents</name_plural>
             </label>
           </labels>
         </item>
@@ -305,6 +341,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Adult</name_singular>
+              <name_plural>Adults</name_plural>
             </label>
           </labels>
         </item>
@@ -312,6 +349,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>General</name_singular>
+              <name_plural>General</name_plural>
             </label>
           </labels>
         </item>
@@ -319,6 +357,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Juvenile</name_singular>
+              <name_plural>Juveniles</name_plural>
             </label>
           </labels>
         </item>
@@ -326,6 +365,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Preschool</name_singular>
+              <name_plural>Preschool</name_plural>
             </label>
           </labels>
         </item>
@@ -333,6 +373,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Specialized</name_singular>
+              <name_plural>Specialized</name_plural>
             </label>
           </labels>
         </item>
@@ -342,7 +383,6 @@
       <labels>
         <label locale="en_US">
           <name>Access conditions</name>
-          <description>from righstatements.org and creativecommons.org</description>
         </label>
       </labels>
       <items>
@@ -350,6 +390,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>In copyright</name_singular>
+              <name_plural>In copyright</name_plural>
             </label>
           </labels>
         </item>
@@ -357,6 +398,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>In copyright - EU orphan work</name_singular>
+              <name_plural>In copyright - EU orphan work</name_plural>
             </label>
           </labels>
         </item>
@@ -364,6 +406,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>In copyright - educational use permitted</name_singular>
+              <name_plural>In copyright - educational use permitted</name_plural>
             </label>
           </labels>
         </item>
@@ -371,6 +414,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>In copyright - non-commercial use permitted</name_singular>
+             <name_plural>In copyright - non-commercial use permitted</name_plural>
             </label>
           </labels>
         </item>
@@ -378,6 +422,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>In copyright - rights-holder(s) unlocatable or unidentifiable</name_singular>
+              <name_plural>In copyright - rights-holder(s) unlocatable or unidentifiable</name_plural>
             </label>
           </labels>
         </item>
@@ -385,6 +430,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>No copyright - contractual restrictions</name_singular>
+              <name_plural>No copyright - contractual restrictions</name_plural>
             </label>
           </labels>
         </item>
@@ -392,6 +438,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>No copyright - non-commercial use only</name_singular>
+              <name_plural>No copyright - non-commercial use only</name_plural>
             </label>
           </labels>
         </item>
@@ -399,6 +446,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>No copyright - other known legal restrictions</name_singular>
+              <name_plural>No copyright - other known legal restrictions</name_plural>
             </label>
           </labels>
         </item>
@@ -406,6 +454,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>No copyright - United States</name_singular>
+                <name_plural>No copyright - United States</name_plural>
             </label>
           </labels>
         </item>
@@ -413,13 +462,15 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Copyright not evaluated</name_singular>
+              <name_plural>Copyright not evaluated</name_plural>
             </label>
           </labels>
-        </item
+        </item>
         <item idno="copyright_undetermined" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Copyright undetermined</name_singular>
+              <name_plural>Copyright undetermined</name_plural>
             </label>
           </labels>
         </item>
@@ -427,6 +478,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>No known copyright</name_singular>
+              <name_plural>No known copyright</name_plural>
             </label>
           </labels>
         </item>
@@ -434,6 +486,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>CC BY-NC-SA 4.0 - Non-commercial share-alike</name_singular>
+              <name_plural>CC BY-NC-SA 4.0 - Non-commercial share-alike</name_plural>
             </label>
           </labels>
         </item>
@@ -441,6 +494,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>CC0 No Rights Reserved - Public Domain</name_singular>
+              <name_plural>CC0 No Rights Reserved - Public Domain</name_plural>
             </label>
           </labels>
         </item>
@@ -508,11 +562,6 @@
         <typeRestrictions>
           <restriction code="r1">
             <table>ca_objects</table>
-            <settings>
-              <setting name="minAttributesPerRow">0</setting>
-              <setting name="maxAttributesPerRow">255</setting>
-              <setting name="minimumAttributeBundlesToDisplay">1</setting>
-            </settings>
           </restriction>
         </typeRestrictions>
        </metadataElement>
@@ -532,11 +581,6 @@
         <typeRestrictions>
           <restriction code="r1">
             <table>ca_objects</table>
-            <settings>
-              <setting name="minAttributesPerRow">0</setting>
-              <setting name="maxAttributesPerRow">255</setting>
-              <setting name="minimumAttributeBundlesToDisplay">1</setting>
-            </settings>
           </restriction>
         </typeRestrictions>
        </metadataElement>
@@ -556,11 +600,6 @@
         <typeRestrictions>
           <restriction code="r1">
             <table>ca_objects</table>
-            <settings>
-              <setting name="minAttributesPerRow">0</setting>
-              <setting name="maxAttributesPerRow">255</setting>
-              <setting name="minimumAttributeBundlesToDisplay">1</setting>
-            </settings>
           </restriction>
         </typeRestrictions>
        </metadataElement>
@@ -580,11 +619,6 @@
         <typeRestrictions>
           <restriction code="r1">
             <table>ca_objects</table>
-            <settings>
-              <setting name="minAttributesPerRow">0</setting>
-              <setting name="maxAttributesPerRow">255</setting>
-              <setting name="minimumAttributeBundlesToDisplay">1</setting>
-            </settings>
           </restriction>
         </typeRestrictions>
        </metadataElement>
@@ -604,11 +638,6 @@
         <typeRestrictions>
           <restriction code="r1">
             <table>ca_objects</table>
-            <settings>
-              <setting name="minAttributesPerRow">0</setting>
-              <setting name="maxAttributesPerRow">255</setting>
-              <setting name="minimumAttributeBundlesToDisplay">1</setting>
-            </settings>
           </restriction>
         </typeRestrictions>
        </metadataElement>
@@ -618,12 +647,12 @@
     <labels>
       <label locale="en_US">
         <name>name</name>
-        <description>	authority see: http://www.loc.gov/standards/sourcelist/name-title.html </description
+        <description>	authority see: http://www.loc.gov/standards/sourcelist/name-title.html </description>
       </label>
     </labels>
     <documentationUrl>http://www.loc.gov/standards/mods/mods-outline-3-6.html#name</documentationUrl>
     <elements> <!-- subelements of name -->
-      <metadataElement code="namePart" datatype="Text">
+      <metadataElement code="namePartname" datatype="Text">
        <labels>
          <label locale="en_US">
            <name>namePart</name>
