@@ -3437,17 +3437,20 @@
                 <setting name="add_label" locale="en_US">Add title</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_date">
-              <bundle>ca_attribute_date</bundle>
+            <placement code="ca_attribute_identifier">
+              <bundle>ca_attribute_identifier</bundle>
             </placement>
-            <placement code="ca_attribute_description">
-              <bundle>ca_attribute_description</bundle>
+            <placement code="ca_attribute_titleInfo">
+              <bundle>ca_attribute_titleInfo</bundle>
             </placement>
-            <placement code="ca_attribute_description_source">
-              <bundle>ca_attribute_description_source</bundle>
+            <placement code="ca_attribute_abstract">
+              <bundle>ca_attribute_abstract</bundle>
             </placement>
-            <placement code="ca_attribute_language">
-              <bundle>ca_attribute_language</bundle>
+            <placement code="ca_attribute_name">
+              <bundle>ca_attribute_name</bundle>
+            </placement>
+            <placement code="ca_attribute_typeOfResource">
+              <bundle>ca_attribute_typeOfResource</bundle>
             </placement>
           </bundlePlacements>
         </screen>
@@ -3458,14 +3461,8 @@
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="ca_attribute_georeference">
-              <bundle>ca_attribute_georeference</bundle>
-            </placement>
-            <placement code="ca_attribute_coverageDates">
-              <bundle>ca_attribute_coverageDates</bundle>
-            </placement>
-            <placement code="ca_attribute_coverageNotes">
-              <bundle>ca_attribute_coverageNotes</bundle>
+            <placement code="ca_attribute_originInfo">
+              <bundle>ca_attribute_originInfo</bundle>
             </placement>
           </bundlePlacements>
         </screen>
