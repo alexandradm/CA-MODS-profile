@@ -3,11 +3,12 @@ IN DEVELOPMENT
 
 strict MODS installation profile for Collective Access Sites
 
-as of 9/14/17, this profile set up has:
--all MODS elements and subelements
--lists for 5 of 6 list-type elements
+as of 10/13/17, this profile set up has:
+-all MODS elements and subelements in one file, validated against .xsd
+-Dublincore original file for example of User Interface and Relationships
+-Dublincore2MODS transition file for compiling MODS elements, User Interface, and Relationships
 
 to do: 
--define datatypes
--create list for AccessConditions built from rightsstatements.org and creativecommons.org
--add controlled vocabularies to certain elements 
+-Finalize User Interface (screens and bundles)
+-Create Relationships
+-test controlled vocabularies for specified elements 
