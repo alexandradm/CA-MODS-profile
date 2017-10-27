@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base" infoUrl="http://dublincore.org/documents/dces/">
-  <profileName>[Standard] DublinCore [2014 Revision]</profileName>
-  <profileDescription>Use this profile if you want a system that is compliant with the simple Dublin Core Metadata Element Set, Version 1.1</profileDescription>
+  <profileName>DublinCore to MODS</profileName>
+  <profileDescription>Working Documents for creating MODS profile.</profileDescription>
   <locales>
     <locale lang="en" country="US">English</locale>
   </locales>
@@ -42,7 +42,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Text</name_singular>
-              <name_plural>Text</name_plural>
+              <name_plural>Texts</name_plural>
             </label>
           </labels>
         </item>
@@ -66,7 +66,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Sound recording</name_singular>
-              <name_plural>Sound recording</name_plural>
+              <name_plural>Sound recordings</name_plural>
             </label>
           </labels>
         </item>
@@ -74,7 +74,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Sound recording-musical</name_singular>
-              <name_plural>Sound recording-musical</name_plural>
+              <name_plural>Sound recordings-musical</name_plural>
             </label>
           </labels>
         </item>
@@ -82,7 +82,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Sound recording-nonmusical</name_singular>
-              <name_plural>Sound recording-nonmusical</name_plural>
+              <name_plural>Sound recordings-nonmusical</name_plural>
             </label>
           </labels>
         </item>
@@ -90,7 +90,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Still image</name_singular>
-              <name_plural>Still image</name_plural>
+              <name_plural>Still images</name_plural>
             </label>
           </labels>
         </item>
@@ -98,7 +98,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Moving image</name_singular>
-              <name_plural>Moving image</name_plural>
+              <name_plural>Moving images</name_plural>
             </label>
           </labels>
         </item>
@@ -106,7 +106,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Three dimensional object</name_singular>
-              <name_plural>Three dimensional object</name_plural>
+              <name_plural>Three dimensional objects</name_plural>
             </label>
           </labels>
         </item>
@@ -122,7 +122,7 @@
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Mixed material</name_singular>
-              <name_plural>Mixed material</name_plural>
+              <name_plural>Mixed materials</name_plural>
             </label>
           </labels>
         </item>
@@ -830,7 +830,7 @@
        </settings>
       </metadataElement>
 <!-- TESTING INFORMATION SERVICE LINKING BY DUPLICATING NAMEPART -->
-    <metadataElement code="namePart" datatype="InformationService">
+  <!--  <metadataElement code="namePart" datatype="InformationService">
      <labels>
        <label locale="en_US">
          <name>namePart</name>
@@ -839,7 +839,7 @@
      <settings>
        <setting name="service">http://id.loc.gov/authorities/names.json</setting>
      </settings>
-    </metadataElement>
+   </metadataElement> -->
 <!-- end test -->
       <metadataElement code="displayForm" datatype="Text">
        <labels>
@@ -1184,7 +1184,7 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="typeOfResource" datatype="List" list="resourcetype_list">
+    <metadataElement code="typeOfResource" datatype="List" list="object_types">
       <labels>
         <label locale="en_US">
           <name>typeOfResource</name>
@@ -1348,7 +1348,7 @@
           </labels>
           <settings>
             <setting name="fieldWidth">70</setting>
-            <setting name="fieldHeight">6</setting>
+            <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
           </settings>
@@ -1361,7 +1361,7 @@
           </labels>
           <settings>
             <setting name="fieldWidth">70</setting>
-            <setting name="fieldHeight">6</setting>
+            <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
           </settings>
@@ -1446,7 +1446,7 @@
           </labels>
           <settings>
             <setting name="fieldWidth">70</setting>
-            <setting name="fieldHeight">6</setting>
+            <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
           </settings>
@@ -1471,7 +1471,7 @@
           </labels>
           <settings>
             <setting name="fieldWidth">70</setting>
-            <setting name="fieldHeight">6</setting>
+            <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
           </settings>
@@ -1484,7 +1484,7 @@
           </labels>
           <settings>
             <setting name="fieldWidth">70</setting>
-            <setting name="fieldHeight">6</setting>
+            <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
           </settings>
@@ -1808,9 +1808,9 @@
       </labels>
       <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#identifier</documentationUrl>
       <settings>
-        <setting name="usewysiwygeditor">1</setting>
-        <setting name="fieldWidth">640px</setting>
-        <setting name="fieldHeight">6</setting>
+        <!-- <setting name="usewysiwygeditor">1</setting> -->
+        <setting name="fieldWidth">70px</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -1891,7 +1891,7 @@
           </labels>
           <settings>
             <setting name="fieldWidth">70</setting>
-            <setting name="fieldHeight">6</setting>
+            <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
           </settings>
@@ -1904,7 +1904,7 @@
           </labels>
           <settings>
             <setting name="fieldWidth">70</setting>
-            <setting name="fieldHeight">6</setting>
+            <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
           </settings>
@@ -3074,7 +3074,7 @@
     <metadataElement code="languageOfCataloging" datatype="Text">
       <labels>
         <label locale="en_US">
-          <name>languageOf Cataloging</name>
+          <name>languageOfCataloging</name>
         </label>
       </labels>
       <settings>
@@ -3182,7 +3182,6 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>  -->
-
    <!--Entity Elements-->
     <metadataElement code="address" datatype="Container">
       <labels>
@@ -3220,7 +3219,7 @@
         <metadataElement code="line2" datatype="Container">
           <labels>
             <label locale="en_US">
-              <name>Address line 1</name>
+              <name>Address line 2</name>
             </label>
           </labels>
           <settings/>
@@ -3427,7 +3426,7 @@
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="idno">
+          <!--  <placement code="idno">
               <bundle>idno</bundle>
             </placement>
             <placement code="preferred_labels">
@@ -3436,12 +3435,12 @@
                 <setting name="label" locale="en_US">Title</setting>
                 <setting name="add_label" locale="en_US">Add title</setting>
               </settings>
+            </placement> -->
+            <placement code="ca_attribute_titleInfo">
+              <bundle>ca_attribute_titleInfo</bundle>
             </placement>
             <placement code="ca_attribute_identifier">
               <bundle>ca_attribute_identifier</bundle>
-            </placement>
-            <placement code="ca_attribute_titleInfo">
-              <bundle>ca_attribute_titleInfo</bundle>
             </placement>
             <placement code="ca_attribute_abstract">
               <bundle>ca_attribute_abstract</bundle>
@@ -3451,6 +3450,12 @@
             </placement>
             <placement code="ca_attribute_typeOfResource">
               <bundle>ca_attribute_typeOfResource</bundle>
+            </placement>
+            <placement code="ca_attribute_language">
+              <bundle>ca_attribute_language</bundle>
+            </placement>
+            <placement code="ca_attribute_note">
+              <bundle>ca_attribute_note</bundle>
             </placement>
           </bundlePlacements>
         </screen>
@@ -3464,39 +3469,27 @@
             <placement code="ca_attribute_originInfo">
               <bundle>ca_attribute_originInfo</bundle>
             </placement>
+            <placement code="ca_attribute_targetAudience">
+              <bundle>ca_attribute_targetAudience</bundle>
+            </placement>
           </bundlePlacements>
         </screen>
         <screen idno="format" default="0">
           <labels>
             <label locale="en_US">
-              <name>Format</name>
+              <name>Format and Rights</name>
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="ca_attribute_audio_format">
-              <bundle>ca_attribute_audio_format</bundle>
+            <placement code="ca_physicalDescription">
+              <bundle>ca_attribute_physicalDescription</bundle>
             </placement>
-             <placement code="ca_attribute_video_format">
-              <bundle>ca_attribute_video_format</bundle>
+             <placement code="ca_attribute_tableOfContents">
+              <bundle>ca_attribute_tableOfContents</bundle>
             </placement>
-            <placement code="ca_attribute_text_format">
-              <bundle>ca_attribute_text_format</bundle>
-            </placement>
-            <placement code="ca_attribute_image_format">
-              <bundle>ca_attribute_image_format</bundle>
-            </placement>
-            <placement code="ca_attribute_gen_format">
-              <bundle>ca_attribute_gen_format</bundle>
-            </placement>
-            <placement code="ca_attribute_dimensions">
-              <bundle>ca_attribute_dimensions</bundle>
-            </placement>
-            <placement code="ca_attribute_duration">
-              <bundle>ca_attribute_duration</bundle>
-            </placement>
-            <placement code="ca_attribute_formatNotes">
-              <bundle>ca_attribute_formatNotes</bundle>
-            </placement>
+            <placement code="ca_attribute_accessCondition">
+             <bundle>ca_attribute_accessCondition</bundle>
+           </placement>
           </bundlePlacements>
         </screen>
         <screen idno="rights" default="0">
