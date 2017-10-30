@@ -3492,18 +3492,6 @@
            </placement>
           </bundlePlacements>
         </screen>
-        <screen idno="rights" default="0">
-          <labels>
-            <label locale="en_US">
-              <name>Rights</name>
-            </label>
-          </labels>
-          <bundlePlacements>
-            <placement code="ca_attribute_rights">
-              <bundle>ca_attribute_rights</bundle>
-            </placement>
-          </bundlePlacements>
-        </screen>
         <screen idno="subjects" default="0">
           <labels>
             <label locale="en_US">
@@ -3511,21 +3499,12 @@
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="ca_list_items">
-              <bundle>ca_list_items</bundle>
-              <settings>
-                <setting name="label" locale="en_US">CA Custom Subject Authority</setting>
-                <setting name="add_label" locale="en_US">Add new subject</setting>
-                <setting name="width">500px</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_lcsh_terms">
-              <bundle>ca_attribute_lcsh_terms</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Library of Congress Subject Headings</setting>
-                <setting name="add_label" locale="en_US">Add new subject heading</setting>
-              </settings>
-            </placement>
+            <placement code="ca_attribute_subject">
+             <bundle>ca_attribute_subject</bundle>
+           </placement>
+           <placement code="ca_attribute_genre">
+            <bundle>ca_attribute_genre</bundle>
+          </placement>
           </bundlePlacements>
         </screen>
         <screen idno="media" default="0">
@@ -3547,6 +3526,15 @@
             </label>
           </labels>
           <bundlePlacements>
+            <placement code="ca_attribute_relatedItem">
+             <bundle>ca_attribute_relatedItem</bundle>
+           </placement>
+           <placement code="ca_attribute_extension">
+            <bundle>ca_attribute_extension</bundle>
+          </placement>
+          <placement code="ca_attribute_part">
+           <bundle>ca_attribute_part</bundle>
+         </placement>
             <placement code="ca_objects">
               <bundle>ca_objects</bundle>
             </placement>
@@ -3602,25 +3590,22 @@
             </placement>
           </bundlePlacements>
         </screen>
-        <screen idno="links" default="0">
-          <labels>
-            <label locale="en_US">
-              <name>Links</name>
-            </label>
-          </labels>
-          <bundlePlacements>
-            <placement code="ca_attribute_external_link">
-              <bundle>ca_attribute_external_link</bundle>
-            </placement>
-          </bundlePlacements>
-        </screen>
         <screen idno="admin" default="0">
           <labels>
             <label locale="en_US">
-              <name>Admin info</name>
+              <name>Admin Info</name>
             </label>
           </labels>
           <bundlePlacements>
+            <placement code="ca_attribute_classification">
+             <bundle>ca_attribute_classification</bundle>
+           </placement>
+           <placement code="ca_attribute_location">
+            <bundle>ca_attribute_location</bundle>
+          </placement>
+          <placement code="ca_attribute_recordInfo">
+           <bundle>ca_attribute_recordInfo</bundle>
+         </placement>
             <placement code="hierarchy_location">
               <bundle>hierarchy_location</bundle>
             </placement>
