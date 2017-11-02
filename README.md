@@ -1,5 +1,4 @@
 # CA-MODS-profile
-IN DEVELOPMENT
 
 strict MODS installation profile for Collective Access Sites
 
