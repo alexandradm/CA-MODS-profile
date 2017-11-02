@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base" infoUrl="http://dublincore.org/documents/dces/">
-  <profileName>DublinCore to MODS</profileName>
-  <profileDescription>Working Documents for creating MODS profile.</profileDescription>
+  <profileName>MODS Profile</profileName>
+  <profileDescription>MODS profile developed in 2017 for SUNY Maritime.</profileDescription>
   <locales>
     <locale lang="en" country="US">English</locale>
   </locales>
@@ -671,6 +671,151 @@
         </item>
       </items>
     </list>
+    <list code="frequency_list" hierarchical="1" system="0" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Frequency</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="continuous" default="0" enabled="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Continuously updated</name_singular>
+              <name_plural>Continuously updated</name_plural>
+            </label>
+          </labels>
+        </item>
+          <item idno="daily" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Daily</name_singular>
+                <name_plural>Daily</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="semiweekly" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Semiweekly</name_singular>
+                <name_plural>Semiweekly</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="threeweek" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Three times a week</name_singular>
+                <name_plural>Three times a week</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="weekly" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Weekly</name_singular>
+                <name_plural>Weekly</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="biweekly" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Biweekly</name_singular>
+                <name_plural>Biweekly</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="threemonth" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Three times a month</name_singular>
+                <name_plural>Three times a month</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="semimonthly" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Semimonthly</name_singular>
+                <name_plural>Semimonthly</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="monthly" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Monthly</name_singular>
+                <name_plural>Monthly</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="bimonthly" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Bimonthly</name_singular>
+                <name_plural>Bimonthly</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="quarterly" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Quarterly</name_singular>
+                <name_plural>Quarterly</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="threeyear" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Three times a year</name_singular>
+                <name_plural>Three times a year</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="semiannual" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Semiannual</name_singular>
+                <name_plural>Semiannual</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="annual" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Annual</name_singular>
+                <name_plural>Annual</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="biennial" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Biennial</name_singular>
+                <name_plural>Biennial</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="triennial" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Triennial</name_singular>
+                <name_plural>Triennial</name_plural>
+              </label>
+            </labels>
+          </item>
+          <item idno="irregular" default="0" enabled="1">
+            <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>Completely irregular</name_singular>
+                <name_plural>Completely irregular</name_plural>
+              </label>
+            </labels>
+          </item>
+      </items>
+    </list>
   </lists>
   <elementSets>
     <!--MODS Elements-->
@@ -718,7 +863,7 @@
           </label>
         </labels>
         <settings>
-          <setting name="fieldWidth">40</setting>
+          <setting name="fieldWidth">20</setting>
           <setting name="fieldHeight">1</setting>
           <setting name="minChars">0</setting>
           <setting name="maxChars">65535</setting>
@@ -732,7 +877,7 @@
           </label>
         </labels>
         <settings>
-          <setting name="fieldWidth">40</setting>
+          <setting name="fieldWidth">20</setting>
           <setting name="fieldHeight">1</setting>
           <setting name="minChars">0</setting>
           <setting name="maxChars">65535</setting>
@@ -746,7 +891,7 @@
           </label>
         </labels>
         <settings>
-          <setting name="fieldWidth">40</setting>
+          <setting name="fieldWidth">10</setting>
           <setting name="fieldHeight">1</setting>
           <setting name="minChars">0</setting>
           <setting name="maxChars">65535</setting>
@@ -829,32 +974,21 @@
          <setting name="doesNotTakeLocale">1</setting>
        </settings>
       </metadataElement>
-<!-- TESTING INFORMATION SERVICE LINKING BY DUPLICATING NAMEPART -->
-  <!--  <metadataElement code="namePart" datatype="InformationService">
+    <metadataElement code="role" datatype="Text">
      <labels>
        <label locale="en_US">
-         <name>namePart</name>
+         <name>role</name>
+         <description> see:http://www.loc.gov/standards/sourcelist/relator-role.html </description>
        </label>
      </labels>
      <settings>
-       <setting name="service">http://id.loc.gov/authorities/names.json</setting>
+       <setting name="fieldWidth">20</setting>
+       <setting name="fieldHeight">1</setting>
+       <setting name="minChars">0</setting>
+       <setting name="maxChars">65535</setting>
+       <setting name="doesNotTakeLocale">1</setting>
      </settings>
-   </metadataElement> -->
-<!-- end test -->
-      <metadataElement code="displayForm" datatype="Text">
-       <labels>
-         <label locale="en_US">
-           <name>displayForm</name>
-         </label>
-       </labels>
-       <settings>
-         <setting name="fieldWidth">40</setting>
-         <setting name="fieldHeight">1</setting>
-         <setting name="minChars">0</setting>
-         <setting name="maxChars">65535</setting>
-         <setting name="doesNotTakeLocale">1</setting>
-       </settings>
-      </metadataElement>
+    </metadataElement>
       <metadataElement code="affiliation" datatype="Text">
        <labels>
          <label locale="en_US">
@@ -862,22 +996,7 @@
          </label>
        </labels>
        <settings>
-         <setting name="fieldWidth">40</setting>
-         <setting name="fieldHeight">1</setting>
-         <setting name="minChars">0</setting>
-         <setting name="maxChars">65535</setting>
-         <setting name="doesNotTakeLocale">1</setting>
-       </settings>
-      </metadataElement>
-      <metadataElement code="role" datatype="Text">
-       <labels>
-         <label locale="en_US">
-           <name>role</name>
-           <description> see:http://www.loc.gov/standards/sourcelist/relator-role.html </description>
-         </label>
-       </labels>
-       <settings>
-         <setting name="fieldWidth">40</setting>
+         <setting name="fieldWidth">20</setting>
          <setting name="fieldHeight">1</setting>
          <setting name="minChars">0</setting>
          <setting name="maxChars">65535</setting>
@@ -892,6 +1011,20 @@
        </labels>
        <settings>
          <setting name="fieldWidth">40</setting>
+         <setting name="fieldHeight">1</setting>
+         <setting name="minChars">0</setting>
+         <setting name="maxChars">65535</setting>
+         <setting name="doesNotTakeLocale">1</setting>
+       </settings>
+      </metadataElement>
+      <metadataElement code="displayForm" datatype="Text">
+       <labels>
+         <label locale="en_US">
+           <name>displayForm</name>
+         </label>
+       </labels>
+       <settings>
+         <setting name="fieldWidth">10</setting>
          <setting name="fieldHeight">1</setting>
          <setting name="minChars">0</setting>
          <setting name="maxChars">65535</setting>
@@ -962,8 +1095,8 @@
     <metadataElement code="abstract" datatype="Text">
       <labels>
         <label locale="en_US">
-          <name>Abstract</name>
-          <description>Abstract</description>
+          <name>abstract</name>
+          <description>abstract</description>
         </label>
       </labels>
       <documentationUrl>http://www.loc.gov/standards/mods/mods-outline-3-6.html#abstract</documentationUrl>
@@ -1265,9 +1398,8 @@
       </labels>
       <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#genre</documentationUrl>
       <settings>
-        <setting name="usewysiwygeditor">1</setting>
-        <setting name="fieldWidth">640px</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">40px</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -1347,7 +1479,7 @@
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">70</setting>
+            <setting name="fieldWidth">20</setting>
             <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
@@ -1360,7 +1492,7 @@
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">70</setting>
+            <setting name="fieldWidth">20</setting>
             <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
@@ -1436,21 +1568,6 @@
       </labels>
       <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#physicalDescription</documentationUrl>
       <elements>
-        <metadataElement code="form" datatype="Text">
-          <labels>
-            <label locale="en_US">
-              <name>form</name>
-              <description>Attributes: authority (see: http://www.loc.gov/standards/sourcelist/genre-form.html); authorityURI; valueURI; type
-(Examples: material, technique)</description>
-            </label>
-          </labels>
-          <settings>
-            <setting name="fieldWidth">70</setting>
-            <setting name="fieldHeight">1</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
-          </settings>
-        </metadataElement>
         <metadataElement code="reformattingQuality" datatype="List" list="reformatting_list">
           <labels>
             <label locale="en_US">
@@ -1470,7 +1587,7 @@
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">70</setting>
+            <setting name="fieldWidth">10</setting>
             <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
@@ -1483,7 +1600,7 @@
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">70</setting>
+            <setting name="fieldWidth">10</setting>
             <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
@@ -1510,7 +1627,22 @@
           </labels>
           <settings>
             <setting name="fieldWidth">70</setting>
-            <setting name="fieldHeight">6</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="form" datatype="Text">
+          <labels>
+            <label locale="en_US">
+              <name>form</name>
+              <description>Attributes: authority (see: http://www.loc.gov/standards/sourcelist/genre-form.html); authorityURI; valueURI; type
+(Examples: material, technique)</description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">20</setting>
+            <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
           </settings>
@@ -1657,9 +1789,8 @@
       </labels>
       <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#classification</documentationUrl>
       <settings>
-        <setting name="usewysiwygeditor">1</setting>
-        <setting name="fieldWidth">640px</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">40px</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -1731,9 +1862,8 @@
       </labels>
       <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#relatedItem</documentationUrl>
       <settings>
-        <setting name="usewysiwygeditor">1</setting>
-        <setting name="fieldWidth">640px</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">40px</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -1808,8 +1938,7 @@
       </labels>
       <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#identifier</documentationUrl>
       <settings>
-        <!-- <setting name="usewysiwygeditor">1</setting> -->
-        <setting name="fieldWidth">70px</setting>
+        <setting name="fieldWidth">10px</setting>
         <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
@@ -1883,32 +2012,6 @@
       </labels>
       <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#originInfo</documentationUrl>
       <elements>
-        <metadataElement code="place" datatype="Text">
-          <labels>
-            <label locale="en_US">
-              <name>place</name>
-            </label>
-          </labels>
-          <settings>
-            <setting name="fieldWidth">70</setting>
-            <setting name="fieldHeight">1</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
-          </settings>
-        </metadataElement>
-        <metadataElement code="publisher" datatype="Text">
-          <labels>
-            <label locale="en_US">
-              <name>publisher</name>
-            </label>
-          </labels>
-          <settings>
-            <setting name="fieldWidth">70</setting>
-            <setting name="fieldHeight">1</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
-          </settings>
-        </metadataElement>
         <metadataElement code="dateIssued" datatype="DateRange">
           <labels>
             <label locale="en_US">
@@ -1916,7 +2019,7 @@
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">40</setting>
+            <setting name="fieldWidth">20</setting>
             <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
@@ -1929,7 +2032,7 @@
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">40</setting>
+            <setting name="fieldWidth">20</setting>
             <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
@@ -1942,16 +2045,16 @@
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">40</setting>
+            <setting name="fieldWidth">20</setting>
             <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
           </settings>
         </metadataElement>
-        <metadataElement code="dateValid" datatype="DateRange">
+        <metadataElement code="place" datatype="Text">
           <labels>
             <label locale="en_US">
-              <name>dateValid</name>
+              <name>place</name>
             </label>
           </labels>
           <settings>
@@ -1961,14 +2064,14 @@
             <setting name="maxChars">65535</setting>
           </settings>
         </metadataElement>
-        <metadataElement code="dateModified" datatype="DateRange">
+        <metadataElement code="publisher" datatype="Text">
           <labels>
             <label locale="en_US">
-              <name>dateModified</name>
+              <name>publisher</name>
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">40</setting>
+            <setting name="fieldWidth">20</setting>
             <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
@@ -1981,20 +2084,7 @@
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">40</setting>
-            <setting name="fieldHeight">1</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
-          </settings>
-        </metadataElement>
-        <metadataElement code="dateOther" datatype="DateRange">
-          <labels>
-            <label locale="en_US">
-              <name>dateOther</name>
-            </label>
-          </labels>
-          <settings>
-            <setting name="fieldWidth">40</setting>
+            <setting name="fieldWidth">20</setting>
             <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
@@ -2007,7 +2097,7 @@
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">40</setting>
+            <setting name="fieldWidth">20</setting>
             <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
@@ -2020,7 +2110,7 @@
             </label>
           </labels>
           <settings>
-            <setting name="fieldWidth">40</setting>
+            <setting name="fieldWidth">20</setting>
             <setting name="fieldHeight">1</setting>
             <setting name="minChars">0</setting>
             <setting name="maxChars">65535</setting>
@@ -2035,6 +2125,45 @@
           <settings>
             <setting name="render">select</setting>
             <setting name="maxColumns">1</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="dateOther" datatype="DateRange">
+          <labels>
+            <label locale="en_US">
+              <name>dateOther</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">20</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="dateValid" datatype="DateRange">
+          <labels>
+            <label locale="en_US">
+              <name>dateValid</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">20</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+          </settings>
+        </metadataElement>
+        <metadataElement code="dateModified" datatype="DateRange">
+          <labels>
+            <label locale="en_US">
+              <name>dateModified</name>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">20</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
           </settings>
         </metadataElement>
       </elements> <!-- end OriginInfo subelements -->
@@ -2219,7 +2348,7 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">40</setting>
+        <setting name="fieldWidth">10</setting>
         <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
@@ -2256,7 +2385,7 @@
        </label>
      </labels>
      <settings>
-       <setting name="fieldWidth">40</setting>
+       <setting name="fieldWidth">10</setting>
        <setting name="fieldHeight">1</setting>
        <setting name="minChars">0</setting>
        <setting name="maxChars">65535</setting>
@@ -2490,7 +2619,7 @@
 <metadataElement code="cartographics" datatype="Text">
  <labels>
    <label locale="en_US">
-     <name>cartographics (scale, projecion, coordinates)</name>
+     <name>cartographics</name>
    </label>
  </labels>
  <settings>
@@ -2591,8 +2720,8 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">20</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -2604,21 +2733,21 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">20</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
     </metadataElement>
-    <metadataElement code="url" datatype="Text">
+    <metadataElement code="url" datatype="Url">
       <labels>
         <label locale="en_US">
           <name>url</name>
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">40</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -2630,8 +2759,8 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">20</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -2643,8 +2772,8 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">20</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -2710,7 +2839,7 @@
     </restriction>
   </typeRestrictions>
 </metadataElement> <!-- end Location element -->
-<metadataElement code="accessCondition" datatype="Text">
+<metadataElement code="accessCondition" datatype="List" list="conditions_list">
   <labels>
     <label locale="en_US">
       <name>accessCondition</name>
@@ -2719,10 +2848,8 @@
   </labels>
   <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#accessCondition</documentationUrl>
   <settings>
-    <setting name="fieldWidth">70</setting>
-    <setting name="fieldHeight">6</setting>
-    <setting name="minChars">0</setting>
-    <setting name="maxChars">65535</setting>
+    <setting name="render">select</setting>
+    <setting name="maxColumns">1</setting>
   </settings>
   <typeRestrictions>
     <restriction code="r1">
@@ -2801,8 +2928,8 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">20</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -2815,13 +2942,13 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">20</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
     </metadataElement>
-    <metadataElement code="date" datatype="Text">
+    <metadataElement code="date" datatype="DateRange">
       <labels>
         <label locale="en_US">
           <name>date</name>
@@ -2829,8 +2956,8 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">20</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -2842,8 +2969,8 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">40</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -2917,8 +3044,8 @@
   </labels>
   <documentationUrl>http://www.loc.gov/standards/mods/mods-outline.html#extension</documentationUrl>
   <settings>
-    <setting name="fieldWidth">70</setting>
-    <setting name="fieldHeight">6</setting>
+    <setting name="fieldWidth">20</setting>
+    <setting name="fieldHeight">1</setting>
     <setting name="minChars">0</setting>
     <setting name="maxChars">65535</setting>
   </settings>
@@ -2998,13 +3125,13 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">20</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
     </metadataElement>
-    <metadataElement code="recordCreationDate" datatype="Text">
+    <metadataElement code="recordCreationDate" datatype="DateRange">
       <labels>
         <label locale="en_US">
           <name>recordCreationDate</name>
@@ -3012,13 +3139,13 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">20</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
     </metadataElement>
-    <metadataElement code="recordChangeDate" datatype="Text">
+    <metadataElement code="recordChangeDate" datatype="DateRange">
       <labels>
         <label locale="en_US">
           <name>recordChangeDate</name>
@@ -3026,8 +3153,8 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">20</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -3039,8 +3166,8 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">10</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -3052,8 +3179,8 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">20</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -3065,8 +3192,8 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">20</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -3078,8 +3205,8 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">20</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -3092,8 +3219,8 @@
         </label>
       </labels>
       <settings>
-        <setting name="fieldWidth">70</setting>
-        <setting name="fieldHeight">6</setting>
+        <setting name="fieldWidth">40</setting>
+        <setting name="fieldHeight">1</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -3160,28 +3287,6 @@
   </typeRestrictions>
 </metadataElement> <!-- end RecordInfo element -->
 <!-- END MODS ELEMENTS -->
-  <!-- list example   <metadataElement code="reproduction" datatype="List" list="original_reproduction">
-      <labels>
-        <label locale="en_US">
-          <name>Reproduction</name>
-        </label>
-      </labels>
-      <settings>
-        <setting name="render">checklist</setting>
-        <setting name="maxColumns">1</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction code="r1">
-          <table>ca_objects</table>
-          <type>image</type>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>  -->
    <!--Entity Elements-->
     <metadataElement code="address" datatype="Container">
       <labels>
@@ -3426,7 +3531,7 @@
             </label>
           </labels>
           <bundlePlacements>
-          <!--  <placement code="idno">
+          <placement code="idno">
               <bundle>idno</bundle>
             </placement>
             <placement code="preferred_labels">
@@ -3435,7 +3540,7 @@
                 <setting name="label" locale="en_US">Title</setting>
                 <setting name="add_label" locale="en_US">Add title</setting>
               </settings>
-            </placement> -->
+            </placement>
             <placement code="ca_attribute_titleInfo">
               <bundle>ca_attribute_titleInfo</bundle>
             </placement>
@@ -3481,6 +3586,9 @@
             </label>
           </labels>
           <bundlePlacements>
+            <placement code="ca_attribute_genre">
+             <bundle>ca_attribute_genre</bundle>
+           </placement>
             <placement code="ca_physicalDescription">
               <bundle>ca_attribute_physicalDescription</bundle>
             </placement>
@@ -3502,9 +3610,6 @@
             <placement code="ca_attribute_subject">
              <bundle>ca_attribute_subject</bundle>
            </placement>
-           <placement code="ca_attribute_genre">
-            <bundle>ca_attribute_genre</bundle>
-          </placement>
           </bundlePlacements>
         </screen>
         <screen idno="media" default="0">
